@@ -6,27 +6,28 @@ using System.Threading.Tasks;
  
 namespace ConsoleApplication1
 {
-    class Program
+   public class Example
     {
-        static void Main(string[] args)
+        public static void CheckEvenNumber(int check_number)
         {
-            int a;
-            Console.WriteLine("введите число: ");
-            a = Convert.ToInt32(Console.ReadLine());
+            
+         //   Console.WriteLine("введите число: ");
+           // check_number = Convert.ToInt32(Console.ReadLine());
 
-            if (a % 2 == 0)
+            if (check_number % 2 == 0)
             {
                 Console.WriteLine("четное число");
 
             }
             else
             {
-                Console.WriteLine("нечетное");
+                Console.WriteLine("нечетное число");
             }
 
 
 
             Console.ReadKey();
         }
+
     }
 }
