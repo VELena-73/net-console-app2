@@ -3,16 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace ConsoleApp1
+ 
+namespace ConsoleApplication1
 {
-    public class Ssum
+    class Program
     {
-        public static void Main()
+        static void Main(string[] args)
         {
-            int[] array= { 1, 2, 3, 4, 5, 6, 7, 12 };
-            int sum=array.Sum();
-            Console.WriteLine(sum);
+            int a;
+            Console.WriteLine("введите число: ");
+            a = Convert.ToInt32(Console.ReadLine());
+
+            if (a % 2 == 0)
+            {
+                Console.WriteLine("четное число");
+
+            }
+            else
+            {
+                Console.WriteLine("нечетное");
+            }
+
+
+
+            Console.ReadKey();
         }
     }
 }
